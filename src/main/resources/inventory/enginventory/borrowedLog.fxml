@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paneMain" prefHeight="768.0" prefWidth="1360.0" styleClass="paneInnerDark" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventory.enginventory.controllers.BorrowedLog_Controller">
+   <children>
+      <Label layoutX="6.0" prefHeight="41.0" prefWidth="1133.0" styleClass="labelLg" text="Borrow/Return Log" />
+      <Label layoutX="7.0" layoutY="41.0" prefHeight="78.0" prefWidth="313.0" styleClass="lblSmDark" text="Tools currently borrowed out within a 7 day range" />
+      <Label layoutX="1139.0" prefHeight="29.0" prefWidth="89.0" styleClass="lblSmDark" text="Last Updated: " AnchorPane.rightAnchor="132.0" />
+      <Label fx:id="lblLastUpdated" layoutX="1227.0" prefHeight="29.0" prefWidth="129.0" styleClass="lblSmDark" stylesheets="@Style.css" AnchorPane.rightAnchor="5.0" />
+      <TableView fx:id="tblBorrowedLog" fixedCellSize="75.0" layoutX="40.0" layoutY="119.0" prefHeight="614.0" prefWidth="1268.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="118.0">
+        <columns>
+          <TableColumn fx:id="colPartNumber" prefWidth="212.0" text="Part Number" />
+            <TableColumn fx:id="colPartName" prefWidth="195.0" text="Part Name" />
+            <TableColumn fx:id="colQuantity" prefWidth="101.0" text="Quantity" />
+            <TableColumn fx:id="colLine" prefWidth="108.0" text="Line" />
+            <TableColumn fx:id="colLineBuild" prefWidth="126.0" text="Line Build" />
+            <TableColumn fx:id="colShift" prefWidth="138.0" text="Shift" />
+            <TableColumn fx:id="colName" prefWidth="160.0" text="Name" />
+            <TableColumn fx:id="colCheckoutDate" prefWidth="215.0" text="Checkout Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

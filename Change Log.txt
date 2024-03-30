@@ -1,0 +1,8 @@
+V2.0 - 6/16/2023
+> Added increase inventory when tool is returned
+> Added decrease inventroy when tool is checked out
+> Part Name and Category is auto updated when part number is entered and field is changed
+> fixed bug on Set DB operation when window is closed causing DB file to become corrupted
+
+V2.01 - 12/15/2023
+> No longer storing db driver/location in txt file. Storing in properties file.
